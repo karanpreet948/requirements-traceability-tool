@@ -1,0 +1,89 @@
+# Synthetic sample data for the Requirements Traceability Matrix (RTM) tool.
+# Entirely fictional "Enterprise Customer Operations Platform" requirements.
+# REQ-015..REQ-018 are deliberately left without any linked user story so the
+# gap-detection report has real orphan-requirement findings to show.
+
+requirements:
+- requirement_id: REQ-001
+  title: Customer Search and Lookup
+  description: Enable service representatives to search for a customer record by name, account number,
+    or contact details.
+  priority: High
+- requirement_id: REQ-002
+  title: Case Creation and Assignment
+  description: Allow a new service case to be created from an inbound request and automatically routed
+    to the appropriate queue.
+  priority: High
+- requirement_id: REQ-003
+  title: Case Status Notifications
+  description: Notify the customer and assigned representative whenever a case changes status.
+  priority: Medium
+- requirement_id: REQ-004
+  title: Document Upload and Attachment
+  description: Allow supporting documents to be attached to a case record and retrieved later.
+  priority: Medium
+- requirement_id: REQ-005
+  title: Role-Based Access Control
+  description: Restrict case data visibility and actions according to the user's assigned role.
+  priority: High
+- requirement_id: REQ-006
+  title: Audit Trail Logging
+  description: Record a timestamped audit entry for every create, update, and status-change action on
+    a case.
+  priority: High
+- requirement_id: REQ-007
+  title: Customer Address Update Workflow
+  description: Provide a guided workflow for updating a customer's mailing address with validation.
+  priority: Medium
+- requirement_id: REQ-008
+  title: Automated Case Escalation
+  description: Automatically escalate a case to a supervisor queue when it breaches its service level
+    target.
+  priority: High
+- requirement_id: REQ-009
+  title: Standard Reporting Dashboard
+  description: Provide a dashboard of standard operational metrics for team leads (open cases, average
+    handle time, backlog).
+  priority: Medium
+- requirement_id: REQ-010
+  title: Ad Hoc Report Builder
+  description: Allow an analyst to build and export a custom report by selecting fields, filters, and
+    groupings.
+  priority: Low
+- requirement_id: REQ-011
+  title: Customer Communication Preferences
+  description: Allow a customer to set a preferred communication channel (email, SMS, mail) for case updates.
+  priority: Low
+- requirement_id: REQ-012
+  title: Bulk Case Import
+  description: Allow a batch of cases to be imported from a structured file for migration or bulk-intake
+    scenarios.
+  priority: Medium
+- requirement_id: REQ-013
+  title: SLA Tracking and Alerts
+  description: Track the remaining time against each case's service level agreement and alert on approaching
+    breaches.
+  priority: High
+- requirement_id: REQ-014
+  title: Case Closure and Feedback Survey
+  description: Prompt the customer for a short satisfaction survey when a case is closed.
+  priority: Low
+- requirement_id: REQ-015
+  title: Data Retention and Archival Policy
+  description: Automatically archive case records that have been closed for longer than the configured
+    retention period.
+  priority: Medium
+- requirement_id: REQ-016
+  title: Multi-Language Support
+  description: Allow the case portal's customer-facing text to be displayed in multiple configured languages.
+  priority: Low
+- requirement_id: REQ-017
+  title: Mobile-Responsive Case Portal
+  description: Ensure the customer-facing case portal renders correctly on common mobile device screen
+    sizes.
+  priority: Medium
+- requirement_id: REQ-018
+  title: Integration with External Vendor Systems
+  description: Provide an outbound integration point so an external vendor system can be notified of case
+    updates.
+  priority: Low

@@ -1,0 +1,186 @@
+# Synthetic sample data: test cases, each linked to a user story via
+# story_id. execution_status is one of: not_run, passed, failed, blocked.
+# A handful of test cases are deliberately left as not_run so the
+# gap-detection report has real never-executed-test findings.
+
+test_cases:
+- test_case_id: TC-001
+  story_id: STORY-001
+  title: Search returns exact full-name match
+  execution_status: passed
+- test_case_id: TC-002
+  story_id: STORY-001
+  title: Search returns no results for unknown name
+  execution_status: failed
+- test_case_id: TC-003
+  story_id: STORY-002
+  title: Search returns match for valid account number
+  execution_status: blocked
+- test_case_id: TC-004
+  story_id: STORY-002
+  title: Search rejects malformed account number
+  execution_status: not_run
+- test_case_id: TC-005
+  story_id: STORY-003
+  title: Case is created from a well-formed inbound email
+  execution_status: passed
+- test_case_id: TC-006
+  story_id: STORY-003
+  title: Case creation fails gracefully on empty email body
+  execution_status: failed
+- test_case_id: TC-007
+  story_id: STORY-004
+  title: New billing-type case routes to billing queue
+  execution_status: blocked
+- test_case_id: TC-008
+  story_id: STORY-004
+  title: New technical-type case routes to technical queue
+  execution_status: not_run
+- test_case_id: TC-009
+  story_id: STORY-005
+  title: Customer receives status-change email within expected time
+  execution_status: passed
+- test_case_id: TC-010
+  story_id: STORY-005
+  title: Email is not sent when notification preference is disabled
+  execution_status: failed
+- test_case_id: TC-011
+  story_id: STORY-006
+  title: In-app notification appears for case owner on status change
+  execution_status: blocked
+- test_case_id: TC-012
+  story_id: STORY-006
+  title: Notification is suppressed for a reassigned case's prior owner
+  execution_status: not_run
+- test_case_id: TC-013
+  story_id: STORY-007
+  title: PDF attachment under size limit uploads successfully
+  execution_status: passed
+- test_case_id: TC-014
+  story_id: STORY-007
+  title: Attachment over size limit is rejected with a clear error
+  execution_status: failed
+- test_case_id: TC-015
+  story_id: STORY-008
+  title: Previously attached document can be downloaded
+  execution_status: blocked
+- test_case_id: TC-016
+  story_id: STORY-008
+  title: Download of a deleted attachment returns a not-found message
+  execution_status: not_run
+- test_case_id: TC-017
+  story_id: STORY-009
+  title: Admin can assign the 'Representative' role to a user
+  execution_status: passed
+- test_case_id: TC-018
+  story_id: STORY-009
+  title: Admin cannot assign an unrecognized role name
+  execution_status: failed
+- test_case_id: TC-019
+  story_id: STORY-010
+  title: Non-finance user cannot view financial fields
+  execution_status: not_run
+- test_case_id: TC-020
+  story_id: STORY-010
+  title: Finance-role user can view financial fields
+  execution_status: passed
+- test_case_id: TC-021
+  story_id: STORY-011
+  title: Audit entry is created on case creation
+  execution_status: failed
+- test_case_id: TC-022
+  story_id: STORY-011
+  title: Audit entry captures the creating user's ID
+  execution_status: not_run
+- test_case_id: TC-023
+  story_id: STORY-012
+  title: Audit entry is created on status change
+  execution_status: passed
+- test_case_id: TC-024
+  story_id: STORY-012
+  title: Audit entry captures old and new status values
+  execution_status: failed
+- test_case_id: TC-025
+  story_id: STORY-013
+  title: Customer can submit a valid address change request
+  execution_status: not_run
+- test_case_id: TC-026
+  story_id: STORY-013
+  title: Address request with missing postal code is rejected
+  execution_status: passed
+- test_case_id: TC-027
+  story_id: STORY-014
+  title: Valid address format passes validation
+  execution_status: failed
+- test_case_id: TC-028
+  story_id: STORY-014
+  title: Invalid address format is flagged with a specific reason
+  execution_status: not_run
+- test_case_id: TC-029
+  story_id: STORY-015
+  title: Case auto-escalates when it reaches 90% of SLA window
+  execution_status: passed
+- test_case_id: TC-030
+  story_id: STORY-015
+  title: Case does not escalate before the 90% threshold
+  execution_status: passed
+- test_case_id: TC-031
+  story_id: STORY-016
+  title: Supervisor receives escalation notification
+  execution_status: passed
+- test_case_id: TC-032
+  story_id: STORY-016
+  title: Escalation notification includes the case ID and reason
+  execution_status: passed
+- test_case_id: TC-033
+  story_id: STORY-017
+  title: Dashboard shows correct open case count per queue
+  execution_status: passed
+- test_case_id: TC-034
+  story_id: STORY-017
+  title: Dashboard updates open case count after a case closes
+  execution_status: passed
+- test_case_id: TC-035
+  story_id: STORY-018
+  title: Average handle time calculation matches expected sample value
+  execution_status: passed
+- test_case_id: TC-036
+  story_id: STORY-018
+  title: Average handle time excludes cases still open
+  execution_status: passed
+- test_case_id: TC-037
+  story_id: STORY-019
+  title: Analyst can filter custom report by date range
+  execution_status: passed
+- test_case_id: TC-038
+  story_id: STORY-019
+  title: Analyst can group custom report results by queue
+  execution_status: passed
+- test_case_id: TC-039
+  story_id: STORY-020
+  title: Custom report exports to a valid spreadsheet file
+  execution_status: passed
+- test_case_id: TC-040
+  story_id: STORY-020
+  title: Exported report file opens without corruption
+  execution_status: passed
+- test_case_id: TC-041
+  story_id: STORY-021
+  title: Customer can set channel preference to email
+  execution_status: passed
+- test_case_id: TC-042
+  story_id: STORY-021
+  title: Email preference persists after logout and login
+  execution_status: passed
+- test_case_id: TC-043
+  story_id: STORY-022
+  title: Customer can set channel preference to SMS
+  execution_status: passed
+- test_case_id: TC-044
+  story_id: STORY-023
+  title: Valid batch file creates the expected number of cases
+  execution_status: passed
+- test_case_id: TC-045
+  story_id: STORY-024
+  title: Malformed row in batch file is reported without stopping the batch
+  execution_status: passed

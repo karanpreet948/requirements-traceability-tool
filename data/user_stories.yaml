@@ -1,0 +1,89 @@
+# Synthetic sample data: user stories, each linked to a requirement via
+# requirement_id. STORY-025..STORY-028 are deliberately left without any
+# linked test case so the gap-detection report has real orphan-story findings.
+
+user_stories:
+- story_id: STORY-001
+  requirement_id: REQ-001
+  title: As a rep, I can search for a customer by full name
+- story_id: STORY-002
+  requirement_id: REQ-001
+  title: As a rep, I can search for a customer by account number
+- story_id: STORY-003
+  requirement_id: REQ-002
+  title: As a rep, I can create a case from an inbound email
+- story_id: STORY-004
+  requirement_id: REQ-002
+  title: As the system, I auto-route a new case to the correct queue by case type
+- story_id: STORY-005
+  requirement_id: REQ-003
+  title: As a customer, I receive an email when my case status changes
+- story_id: STORY-006
+  requirement_id: REQ-003
+  title: As a rep, I see an in-app notification when a case I own changes status
+- story_id: STORY-007
+  requirement_id: REQ-004
+  title: As a rep, I can attach a PDF document to a case
+- story_id: STORY-008
+  requirement_id: REQ-004
+  title: As a rep, I can view and download a previously attached document
+- story_id: STORY-009
+  requirement_id: REQ-005
+  title: As an admin, I can assign a role to a user
+- story_id: STORY-010
+  requirement_id: REQ-005
+  title: As the system, I hide case financial fields from users without the finance role
+- story_id: STORY-011
+  requirement_id: REQ-006
+  title: As the system, I log an audit entry when a case is created
+- story_id: STORY-012
+  requirement_id: REQ-006
+  title: As the system, I log an audit entry when a case status changes
+- story_id: STORY-013
+  requirement_id: REQ-007
+  title: As a customer, I can submit an address change request online
+- story_id: STORY-014
+  requirement_id: REQ-007
+  title: As the system, I validate a submitted address against a reference format
+- story_id: STORY-015
+  requirement_id: REQ-008
+  title: As the system, I escalate a case to a supervisor queue at 90% of SLA
+- story_id: STORY-016
+  requirement_id: REQ-008
+  title: As a supervisor, I receive a notification when a case is escalated to me
+- story_id: STORY-017
+  requirement_id: REQ-009
+  title: As a team lead, I can view current open case counts by queue
+- story_id: STORY-018
+  requirement_id: REQ-009
+  title: As a team lead, I can view average handle time for the last 7 days
+- story_id: STORY-019
+  requirement_id: REQ-010
+  title: As an analyst, I can select fields and filters to build a custom report
+- story_id: STORY-020
+  requirement_id: REQ-010
+  title: As an analyst, I can export a custom report to a spreadsheet file
+- story_id: STORY-021
+  requirement_id: REQ-011
+  title: As a customer, I can set my preferred contact channel to email
+- story_id: STORY-022
+  requirement_id: REQ-011
+  title: As a customer, I can set my preferred contact channel to SMS
+- story_id: STORY-023
+  requirement_id: REQ-012
+  title: As an admin, I can upload a batch file to create multiple cases at once
+- story_id: STORY-024
+  requirement_id: REQ-012
+  title: As the system, I report row-level errors for a failed bulk import
+- story_id: STORY-025
+  requirement_id: REQ-013
+  title: As the system, I calculate remaining SLA time for an open case
+- story_id: STORY-026
+  requirement_id: REQ-013
+  title: As a rep, I see a visual warning badge when a case is nearing SLA breach
+- story_id: STORY-027
+  requirement_id: REQ-014
+  title: As the system, I send a satisfaction survey link when a case is closed
+- story_id: STORY-028
+  requirement_id: REQ-014
+  title: As an analyst, I can view aggregated survey results by queue
